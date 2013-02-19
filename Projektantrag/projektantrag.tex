@@ -1,0 +1,139 @@
+\documentclass{scrartcl}
+\usepackage[table]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{glossaries}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+	\newglossaryentry{PoC}
+	{
+		name={Proof of Concept},
+		description={Im Projektmanagement ist ein Proof of Concept, auch als Proof of Principle bezeichnet (zu Deutsch: Machbarkeitsnachweis), ein Meilenstein, an dem die prinzipielle Durchführbarkeit eines Vorhabens belegt ist. In der Regel ist mit dem Proof of Concept meist die Entwicklung eines Prototyps verbunden, der die benötigte Kernfunktionalität aufweist.}
+	}
+	\newglossaryentry{EA}
+	{
+		name={Evolutionären Algorithmen},
+		description={Unter Evolutionären Algorithmen versteht man Algorithmen welche um Optimierungsprobleme zu lösen sich in der Biologie orientieren. Zuerst wird eine Population erstellt welche nach einer Fitnessfunktion bewertet wird. Durch Rekombination und Mutation der besten Individuen werden dann neue Individuen geschaffen. Diese Individuen werden wieder bewertet und so startet das Ganze von Neuem, so lange bis ein Abbruchkriterium erreicht ist. \newline Quelle: http://de.wikipedia.org/wiki/Evolutionärer\_Algorithmus}
+	}
+	\newglossaryentry{TR}
+	{
+		name={Tron},
+		description={Tron ist ein von Midway Games produziertes und 1982 veröffentlichtes Arcade-Spiel. \newline Quelle: http://de.wikipedia.org/wiki/Tron\_(Computerspiel)}
+	}
+	\newglossaryentry{IOS}
+	{
+		name={iOS},
+		description={iOS (bis Juni 2010 iPhone OS) ist das Standard-Betriebssystems der Apple-Produkte iPhone,iPod Touch, iPad und der zweiten und dritten Generation des Apple TV. iOS basiert auf OS X. \newline Quelle: http://de.wikipedia.org/wiki/Apple\_iOS}
+	}
+	\newglossaryentry{OSX}
+	{
+		name={Mac OS X},
+		description={Mac OS X ist ein vom Unternehmen Apple entwickeltes Betriebssystem. Es ist eine proprietäre Distribution des frei erhältlichen Darwin-Betriebssystems von Apple. \newline Quelle: http://de.wikipedia.org/wiki/Mac\_OS\_X}
+	}
+	\newglossaryentry{OC}
+	{
+		name={Objective-C},
+		description={Objective-C, erweitert die Programmiersprache C um Sprachmittel zur objektorientierten Programmierung. Objective-C ist die primäre Sprache von Cocoa, einer Entwicklerschnittstelle des Mac OS X und iOS. \newline Quelle: http://de.wikipedia.org/wiki/Objective-C}
+	}
+	\makeglossaries
+
+\begin{document}
+	\section*{Projektanmeldung}
+	\begin{tabularx}{\textwidth}{| X | X |}
+	\hline
+	Status & In Arbeit\\
+	\hline
+	Projektname & DARWIN\\
+	\hline
+	Projektleiter & Noe Thalheim\\
+	\hline
+	Auftraggeber & Stefan Schenk\\
+	\hline
+	Autoren & Yannik Dällenbach, Noe Thalheim\\
+	\hline
+	\end{tabularx}
+	
+	\subsection*{Änderungskontrolle}
+	\begin{tabularx}{\textwidth}{| X | X | X |}
+	\hline
+	\rowcolor[gray]{0.9} Version & Datum & Beschreibung\\
+	\hline
+	1.0 & 5.02.2013 & Init\\
+	\hline
+	1.1 & 12.02.2013 & Überführung in Latex\\
+	\hline
+	\end{tabularx}	
+	
+	\subsection*{Referenzen}
+	
+	\begin{tabular}{| l | l | }
+	\hline
+	\rowcolor[gray]{0.9} Referenz & Quelle, Datum\\
+	\hline
+	Xcode & https://developer.apple.com/technologies/tools/, 5.02.2013\\
+	\hline
+	 & \\
+	\hline
+	\end{tabular}
+	
+	\tableofcontents
+	\pagebreak
+	\section{Beschreibung}
+	Ziel dieses Projekts soll das Erlernen und Verstehen von \Gls{EA} sein, welche in Form eines \Gls{PoC} als Spiel präsentiert werden.  
+	\\\\
+	Das Spiel soll eine Art “\Gls{TR}-Klon” werden mit dem Unterschied, dass der Gegner sich durch \Gls{EA} entwickelt. Gleichzeitig werden wir uns mit \Gls{OC} auseinandersetzten müssen, da wir unser Proof of Concept als \Gls{OSX} App realisieren und eventuell zu einem späteren Zeitpunkt zu einer \gls{IOS} App Portieren könnten.
+	\section{Personelles}
+	An dem Projekt werden folgende Personen mitarbeiten:
+	\\\\
+	\begin{tabular}{| l | l | l | l |}
+	\hline
+	\rowcolor[gray]{0.9} Person & Aufgabe & Email-Adresse & Telefon\\
+	\hline
+	Thalheim Noe & Projektleiter & noe.thalheim@gmail.com & +41786191713\\
+	\hline
+	Dällenbach Yannik & Projektmitarbeiter  & yannikdbach@gmail.com & +41798464415\\
+	\hline
+	\end{tabular}
+	
+	\section{Budget}
+	Die Projektphase „Abschluss“ wird am 4.6.2013 22:30 abgeschlossen. 
+	\subsection{Zeitkontingent}
+	\begin{tabularx}{\textwidth}{| X | X | X | X |}
+	\hline
+	\rowcolor[gray]{0.9} Person & Intern* & Extern** & Total\\
+	\hline
+	Thalheim Noe & 60 Stunden & 40 Stunden & 100 Stunden\\
+	\hline
+	Dällenbach Yannik & 60 Stunden & 40 Stunden & 100 Stunden\\
+	\hline
+	\rowcolor[gray]{0.9} Total & 120 Stunden & 80 Stunden & 200 Stunden\\
+	\hline
+	\end{tabularx}
+	\\
+	*Intern = Arbeitszeit in der GIBB\\
+	**Extern = Arbeitszeit ausserhalb der GIBB
+	\subsection{Finanzielles Budget}
+	\begin{tabularx}{\textwidth}{| X | X | X | X |}
+	\hline
+	\rowcolor[gray]{0.9} Produkt & Preis & Anzahl & Total\\
+	\hline
+	Xcode & 0.- & 2 & 0.-\\
+	\hline
+	div. Bücher & ca. 100.- & 2 & ca. 200.-\\
+	\hline
+	Arbeitszeit* & 0.- & 200 & 0.-\\
+	\hline
+	\rowcolor[gray]{0.9} &  & Total & ca. 200.-\\
+	\hline
+	\end{tabularx}
+	\\
+	*Arbeitszeit wird nicht verrechnet, da sie dem Selbststudium dient.
+	
+	\section{Bezeichnung}
+	DARWIN = \textbf{D}igital \textbf{A}rtificial \textbf{R}andom \textbf{W}alking \textbf{IN}telligence
+	
+	\printglossaries
+	\addcontentsline{toc}{section}{Glossar}
+	
+\end{document}
