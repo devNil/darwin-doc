@@ -1,2 +1,22 @@
 
 .DS_Store
+
+*.aux
+
+*.glg
+
+*.glo
+
+*.gls
+
+*.ist
+
+*.log
+
+*.out
+
+*.pdf
+
+*.gz
+
+*.toc
