@@ -24,21 +24,24 @@ Z4 & A4 & Das Spiel wird über eine Import-Export Funktion verfügen um gegen co
 
 \subsection{Theoretische Umsetzung}
 
-Hier werden die bereits absehbaren Klassen abgebildet. Es soll ein kleiner Überblick darüber bieten wie DARWIN implementiert wird. %insert class diagramm and picture of poc
+Hier werden die bereits absehbaren Klassen abgebildet. Es soll ein kleiner Überblick darüber bieten wie DARWIN implementiert wird. 
 \\
+%insert class diagramm and picture of poc
 \begin{tikzpicture}[node distance=1cm, auto]  
 \tikzset{
 	    mynode/.style={rectangle,align=left,draw=black, top color=white, bottom color=white!50,very thick, inner sep=1em, minimum size=3em, text centered},
 	    myarrow/.style={->, >=latex', shorten >=1pt, thick},
 	    mylabel/.style={text width=7em, text centered} 
 	}  
-	\node[mynode] (auftraggeber) {\textbf{Auftraggeber}\\Stefan Schenk};  
-	\node[mynode, below=1cm of auftraggeber] (projektleiter) 		{\textbf{Projektleiter}\\Noe Thalheim};  
-	\node[mynode, right=of projektleiter] (projektmitarbeiter1) 		{\textbf{Projektmitarbeiter}\\Yannik Dällenbach};
+	\node[mynode] (game) {Game};
+	\node[mynode, below=1cm of game] (entity){Entity};
+	
+	\node[mynode, below=1cm of entity] (screen){Screen};
+	\node[mynode, below=1cm of screen] (inputhandler){InputHandler};
 
 
-	\draw[myarrow] [<->] (auftraggeber.south) -- (projektleiter.north);	
-	\draw[myarrow] [-] (projektleiter.east) -- (projektmitarbeiter1.west);
+	%\draw[myarrow] [<->] (auftraggeber.south) -- (projektleiter.north);	
+	%\draw[myarrow] [-] (projektleiter.east) -- (projektmitarbeiter1.west);
 
 \end{tikzpicture} 
 	\medskip
