@@ -14,18 +14,18 @@ Z2.1 & A2.1 & Das Spiel wird um computergesteuerte Gegner ergänzt, welche sich 
 \hline
 Z2.2 & A2.2 & Die Gegner erhalten die Fähigkeit sich dem Spieler anzupassen. \\
 \hline 
-Z2.3 & A2.3 & Es wird ein Trainings-Mode für die Gegner programmiert welcher es ohne menschliches Einwirken ermöglich bessere Gegner zu trainieren. \\
+Z2.3 & A2.3 & Es wird ein Trainings-Modus für die Gegner programmiert welcher es ohne menschliches Einwirken ermöglich bessere Gegner zu trainieren. \\
 \hline
-Z3 & A3 & Der Trainings-Mode wird erweitert so das es dem Spieler zur verfügung steht mehrere Gegner gezielt zu trainieren, im Trainings-Mode oder gegen den Spieler. \\
+Z3 & A3 & Der Trainings-Modus wird erweitert so das es dem Spieler zur Verfügung steht mehrere Gegner gezielt zu trainieren, im Trainings-Modus oder gegen den Spieler. \\
 \hline
-Z4 & A4 & Das Spiel wird über eine Import-Export Funktion verfügen um gegen computergesteuerte Gegner von anderen Spielern zu spielen. \\
+Z4 & A4 & Das Spiel wird über eine Import/Export-Funktion verfügen um gegen computergesteuerte Gegner von anderen Spielern zu spielen. \\
 \hline
 \end{tabularx}
 
 \subsection{Theoretische Umsetzung}
 
-Hier werden die bereits absehbaren Klassen abgebildet. Es soll ein kleiner Überblick darüber bieten wie DARWIN implementiert wird. 
-\\
+Hier werden die bereits absehbaren Klassen abgebildet. Es soll ein kleiner Überblick bieten wie DARWIN implementiert wird. 
+\\ \\
 %insert class diagramm and picture of poc
 \begin{tikzpicture}[node distance=1cm, auto]  
 \tikzset{
@@ -39,10 +39,21 @@ Hier werden die bereits absehbaren Klassen abgebildet. Es soll ein kleiner Über
 	\node[mynode, below=1cm of entity] (screen){Screen};
 	\node[mynode, below=1cm of screen] (inputhandler){InputHandler};
 
-
-	%\draw[myarrow] [<->] (auftraggeber.south) -- (projektleiter.north);	
-	%\draw[myarrow] [-] (projektleiter.east) -- (projektmitarbeiter1.west);
-
 \end{tikzpicture} 
 	\medskip
 
+\\\\
+
+\begin{tabularx}{\textwidth}{| p{0.7cm} | p{1.5cm} | X |}
+\hline
+\rowcolor[gray]{0.9} Klasse & Beschreibung
+\hline
+Game & Die Game-Klasse stellt im Allgemeinen das Spiel dar und funkioniert als Container für alle spielrevelanten Objekte.
+\hline
+Entity & Die Entity-Klasse stellt eine Spiele-Entität dar. Höchstwahrscheinlich werden später Gegner- und Spieler-Klasse von dieser erben.
+\hline
+Screen & Die Screen-Klasse stellt die allgemeine Klasse für die Graphische Ausgabe dar.
+\hline
+InputHandler & Die InputHandler-Klasse verarbeitet Spielereingaben.
+\hline
+\end{tabularx}
