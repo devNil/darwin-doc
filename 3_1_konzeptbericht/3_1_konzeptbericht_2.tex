@@ -1,11 +1,20 @@
 \section{Systemanforderungen}
 
-Wir haben uns zuvor bei der Voranalyse mit den Problembereichen unseres Projekts befasst und die Haubtaufgaben bestimmt, diese werden nun detaillierter beschrieben. 
+Wir haben uns zuvor bei der Voranalyse mit den Problembereichen unseres Projekts befasst und die Haubtaufgaben extrahiert. Diese werden nun detaillierter beschrieben. 
 
+\begin{figure}[htb]
+
+	\centering
+
+	\includegraphics[width=7cm]{usecase.png}
+
+	\caption{Übersicht Anwendungsfälle}
+
+\end{figure}
 
 \subsection{Übersicht Anwendungsfälle}
 
-Bei unserem Projekt gibt es grundsätzlich zwei Anwendungsfälle, zum einen die möglichkeit auf dem eigenen System gegen die selbstlernenden Gegener (im folgenden Bots genannt) zu spielen oder einen Bot, der bereits trainiert wurde, zu exportieren und gegen einen Bot eines andern Spieler antretten zu lassen.
+Bei unserem Projekt gibt es grundsätzlich zwei Anwendungsfälled. Zum einen die Möglichkeit auf dem eigenen System gegen die selbstlernenden Gegener (im folgenden Bots genannt) zu spielen oder einen Bot, der bereits trainiert wurde, zu exportieren und gegen einen Bot eines andern Spieler antreten zu lassen.
 
 \subsection{Spieler gegen Bot}
 \begin{tabularx}{\textwidth}{| X | X |}
@@ -14,11 +23,11 @@ Bei unserem Projekt gibt es grundsätzlich zwei Anwendungsfälle, zum einen die 
 	\hline
 	Akteure & Bots und der Spieler. \\
 	\hline
-	Vorbedingungen & Der Spieler muss über das Proof-Of-Concept verfügen. \\
+	Vorbedingungen & Der Spieler muss über das Proof of Concept verfügen. \\
 	\hline
 	Ablauf & Der Spieler startet ein neues Spiel.\\
 	\hline
-	Resultat & Das Spiel wird abgeborchen sobald nur noch der Spieler oder ein Bot am Leben ist. \\
+	Resultat & Das Spiel wird abgebrochen sobald nur noch der Spieler oder ein Bot am Leben ist. \\
 	\hline
 	Ausnahmen & In diesem Fall nicht möglich. \\
 	\hline	
@@ -27,16 +36,17 @@ Bei unserem Projekt gibt es grundsätzlich zwei Anwendungsfälle, zum einen die 
 \subsection{Bot gegen Bot}
 \begin{tabularx}{\textwidth}{| X | X |}
 	\hline
-	Kurzbeschreibung & Zwei Bots tretten gegeneinander an, jeder von ihnen wurde auf einem unabhängigen System trainiert. \\
+	Kurzbeschreibung & Zwei Bots treten gegeneinander an. Jeder von ihnen wurde auf einem unabhängigen System trainiert. \\
 	\hline
-	Akteure & Bot von Spieler eins und Bot von Spieler zwei. \\
+	Akteure & Bot von Spieler Eins und Bot von Spieler Zwei. \\
 	\hline
-	Vorbedingungen & Beide Spieler müssen über das Proof-Of-Concept verfügen. \\
+	Vorbedingungen & Beide Spieler müssen über das Proof of Concept verfügen. \\
 	\hline
 	Ablauf & Einer der beiden Spieler exportiert sein Bot und übergibt ihm dem anderen Spieler.\\
 	\hline
 	Resultat & Die beiden Bots spielen in erhöter Geschwindikeit bis einer gewinnt. \\
 	\hline
-	Ausnahmen & Die Übergabe des Bots fällt nicht in die Verantwortung des Proof-Of-Concept.\\
+	Ausnahmen & Die Übergabe des Bots fällt nicht in die Verantwortung des Proof of Concept.\\
 	\hline
 \end{tabularx}
+\newpage
