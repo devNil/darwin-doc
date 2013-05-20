@@ -14,6 +14,12 @@ Javascripts verwendet.
 \subsubsection{DARWIN (Das Spiel)}
 Das Spiel selbst implementiert die allgemeine Spielstruktur welche aus einem Websocket-Server und dem Spiel an sich besteht. Der Websocket-Server implementiert das http.Handler Interface um sich beim HTTP-Server zu registrieren.
 \subsection{Schnittstellendefinitionen}
+Es werden hauptsächlich zwei Interfaces verwendet.
+\subsubsection{1. Browser}
+Der Browser stellt die Schnittstelle der Spieler zum Server dar. Diese wurde
+mithilfe der Technologien HTML5 und Javascript realisiert.
+\subsubsection{http.Handler}
+Die http.Handler Schnittstelle wird dazu verwendet eine Methode beim HTTP-Server zu registrieren damit diese per URL-Aufruf ausgeführt wird.
 \subsection{Sicherheit}
 \subsection{Anforderungszuordnung}
 
