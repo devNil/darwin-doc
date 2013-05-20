@@ -1,0 +1,43 @@
+\documentclass{scrartcl}
+
+\usepackage{tabularx} %better tables
+\usepackage[table]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\begin{document}
+	\section*{Einführungsbericht}
+	
+	\begin{tabularx}{\textwidth}{| X | X |}
+	\hline
+	Status & In Arbeit\\
+	\hline
+	Projektname & DARWIN\\
+	\hline
+	Projektleiter & Noe Thalheim\\
+	\hline
+	Auftraggeber & Stefan Schenk\\
+	\hline
+	Autoren & Yannik Dällenbach, Noe Thalheim\\
+	\hline
+	\end{tabularx}
+	
+	\subsection*{Änderungskontrolle}
+	\begin{tabularx}{\textwidth}{| X | X | X |}
+	\hline
+	\rowcolor[gray]{0.9} Version & Datum & Beschreibung\\
+	\hline
+	1.0 & 12.05.2013 & Init\\
+	\hline
+	\end{tabularx}
+	
+	\pagebreak
+	%inhaltsverzeichnis
+	\tableofcontents
+	\pagebreak
+	%abschnitt 1
+    %\input{4_1_realisierungsbericht_1}
+\end{document}
