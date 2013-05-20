@@ -1,7 +1,27 @@
 \section{Systemdokumentation}
 \subsection{Konfigurations-Dokumentation}
-%\subsubsection{git}
-%\subsubsection{gc version 1.1}
-%\subsubsection{Umgebungsvariablen}
+Um DARWIN verwenden zu können werden folgende Komponenten benötigt.
+\subsubsection{git}
+\textbf{git} wird als Versionierungssystem verwendet und um den 
+Code von github zu clonen. 
+\subsubsection{Go-Compiler Version 1.1}
+Mithilfe des Go-Compilers wird der Sourcecode zu einem ausführbaren Binary
+kompiliert. Im Allgemeinen wird die Go-Compiler Toolchain zum Auflösen 
+der Dependencies von DARWIN und Kompilieren verwendet.
+\subsubsection{Umgebungsvariablen}
+Um DARWIN verwenden zu können muss das Setup Bash Script(setup.sh) ausgeführt werden.
+Dies setzt alle benötigten Umbgebungsvariablen.
+\begin{itemize}
+    \item PORT
+    \item TEMPLATE
+\end{itemize}
+\textbf{PORT}
+\\
+Die PORT-Umgebungsvariable spezifiziert an welchem  Port der Webserver sich
+bindet.
+\\
+\textbf{TEMPLATE}
+\\
+Die TEMPLATE-Umgebungsvariable spezifiziert wo sich die HTML-Templates befinden. 
 \subsection{Benutzerhandbuch}
 \subsection{Supporthandbuch}
