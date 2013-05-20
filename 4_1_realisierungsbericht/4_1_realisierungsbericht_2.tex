@@ -3,6 +3,16 @@
 \subsubsection{Struktur des Systemdesigns}
 \includegraphics[width=\linewidth]{simplearch.png}
 \subsubsection{Beschreibung der Elemente}
+Die Architektur von darwin besteht aus 3 Hauptkomponenten.
+\subsubsection{Die Spieler}
+DARWIN ist ein Multiplayerspiel für bis zu 4 Spieler. Die Spieler können sich via
+Netzwerk auf den Server verbinden. Zum Spielen wir ein Browser verwendet.
+\subsubsection{Der HTTP-Server}
+DARWIN selbst implementiert einen HTTP-Server aus den Standard-Packages von \bold{go}.
+Der HTTP-Server wird für das Hosten der zum Spielen benötigten HTML5-Seiten und
+Javascripts verwendet.
+\subsubsection{DARWIN (Das Spiel)}
+Das Spiel selbst implementiert die allgemeine Spielstruktur welche aus einem Websocket-Server und dem Spiel an sich besteht. Der Websocket-Server implementiert das http.Handler Interface um sich beim HTTP-Server zu registrieren.
 \subsection{Schnittstellendefinitionen}
 \subsection{Sicherheit}
 \subsection{Anforderungszuordnung}
