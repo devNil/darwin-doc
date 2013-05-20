@@ -1,5 +1,6 @@
 build:
 	pdflatex 4_1_realisierungsbericht_yannik_noe.tex
+	pdflatex 4_1_realisierungsbericht_yannik_noe.tex
 	open 4_1_realisierungsbericht_yannik_noe.pdf
 
 clean:
