@@ -2,7 +2,38 @@
 
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+
+\usepackage[T1]{fontenc}
+\newcommand{\changefont}[3]{
+\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+\changefont{phv}{m}{n}
 
 \begin{document}
 	\section*{Arbeitsjournal Yannik Dällenbach}
+
+	Datum : 26.04.2013
+	\\
+
+	\begin{tabularx}{\textwidth}{| m{2cm} | m{2cm} | X | X |}
+	\hline
+	Tatsächlicher Zeitbedarf & Geplanter Zeitbedarf & Beschreibung der Arbeit & Bemerkungen \\
+	\hline
+	1 Tag & 1 Tag & Implementieren des Tron-Klons & Das Protokoll musste erweitert werden. \\
+	\hline
+	\end{tabularx}
+
+	\subsection*{Reflexion des Arbeitstages}
+	Heute begann ich mit der Implementierung des Tron-Klons. Das Spiel sollte in 
+	HTML5 realisiert werden. Zur grafischen Ausgabe benutze ich 
+	das Canvas-Element. Insgesamt besteht das Frontend zum grössten Teil
+	aus Javascript. Beim Implementieren des Javascript-Teils stellte sich heraus
+	,dass das Protokoll welches wir in JSON realisiert haben noch nicht alle
+	benötigten Funktionalitäten für das Spiel besitzt. Es fehlten zum Beispiel
+	das Markieren von Spielern welche verloren haben. Deshalb musste ich das 
+	Protokoll zuerst Serverseitig anpassen was keine riesige Aufgabe darstellte.
+	Am Ende des Tages funktionierte das Spiel komplett und man konnte bereits die
+	ersten Runden spielen.
+	\subsection*{Pendenzen für den nächsten Arbeitstag}
+	Die Implementierung des mobilen Controllers.
 \end{document}
